@@ -1,0 +1,16 @@
+    1  da
+    2  d
+    3  a
+    4  da
+    5  -h
+    6  --help
+    7  man man
+    8  mk dir
+    9  mkdir week1
+   10  explorer.exe .
+   11  ls /usr/bin | grep gcc | sort -r > ~/week1/ex1.txt
+   12  ls /usr/bin | "grep gcc" | sort -r > ~/week1/ex1.txt
+   13  ls /usr/bin | grep "gcc" | sort -r > ~/week1/ex1.txt
+   14  sudo apt install gcc
+   15  ls /usr/bin | grep "gcc" | sort -r > ~/week1/ex1.txt
+   16  history > ~/week1/ex2.txt
