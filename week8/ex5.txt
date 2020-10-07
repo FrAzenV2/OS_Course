@@ -1,0 +1,3 @@
+Physical address is a real address in the RAM.
+Virtual addresses of the each program are stored in the table accesible only by this program and mapped to the actual memory addresses.
+That implementation is for the security.
