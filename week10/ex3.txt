@@ -1,0 +1,28 @@
+1. Creating a file "_ex3.txt"
+root@DESKTOP-ARRA79M:/mnt/c/WINDOWS/system32# touch _ex3.txt
+
+2. Removing execute permission for everybody
+root@DESKTOP-ARRA79M:/mnt/c/WINDOWS/system32# chmod -x _ex3.txt
+
+3.1. Granting all permissions to owner
+root@DESKTOP-ARRA79M:/mnt/c/WINDOWS/system32# chmod u=rwx _ex3.txt
+
+3.2. Granting all permissions to others
+root@DESKTOP-ARRA79M:/mnt/c/WINDOWS/system32# chmod o=rwx _ex3.txt
+
+3.3. Checking if everything is right
+root@DESKTOP-ARRA79M:/mnt/c/WINDOWS/system32# ls -l _ex3.txt 
+-rwxrw-rwx 1 root root 0 Oct 21 23:10 _ex3.txt
+
+4.1. Granting group permissions equals to owner's
+root@DESKTOP-ARRA79M:/mnt/c/WINDOWS/system32# chmod g=u _ex3.txt 
+
+4.2. Checking if everything is right
+root@DESKTOP-ARRA79M:/mnt/c/WINDOWS/system32# ls -l _ex3.txt 
+-rwxrwxrwx 1 root root 0 Oct 21 23:10 _ex3.txt
+
+5.
+660 == -rw-rw----
+775 == -rwxrwxr-x
+777 == -rwxrwxrwx
+(where first three for owner, next three for group, the last three for others)

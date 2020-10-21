@@ -1,0 +1,17 @@
+1. Creating "file.txt" in "week10"
+root@DESKTOP-ARRA79M:/mnt/c/WINDOWS/system32# touch file.txt
+
+2. Creating a link to this file from "week10"
+root@DESKTOP-ARRA79M:/mnt/c/WINDOWS/system32# link file.txt _ex2.txt
+
+3. Getting the i-node number of the "file.txt"
+root@DESKTOP-ARRA79M:/mnt/c/WINDOWS/system32# ls -i file.txt
+11540474045155444 file.txt
+
+4. Tracing all links to the "file.txt"
+root@DESKTOP-ARRA79M:/mnt/c/WINDOWS/system32# find -inum 11540474045155444
+./file.txt
+./_ex2.txt
+
+5.Removing all links from the "file.txt"
+root@DESKTOP-ARRA79M:/mnt/c/WINDOWS/system32# find -inum 11540474045155444 -exec rm {}\;
